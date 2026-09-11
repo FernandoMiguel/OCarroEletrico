@@ -1,5 +1,7 @@
 # O Carro Elétrico
 
+> Última revisão: 2026-09-11. A rede está em transição até 31-12-2026 (coexistem postos ligados e não ligados à MOBI.E) — para dados live ver [NAP](https://nap.ocarroeletrico.com/).
+
 <!-- TOC -->
 
 - [O Carro Elétrico](#o-carro-el%C3%A9trico)
@@ -63,6 +65,8 @@ Em Portugal, por opção do legislador, ao contrário do resto da Europa, a rede
 
 Enquanto noutros países é comum cada rede ter o seu próprio explorador e precisar de uma forma de contrato com cada operador (seja cartão RFID, App, etc.), ou no melhor dos casos simplesmente aceitar cartão de crédito, cá qualquer carregador que esteja na via pública ou parques, terá que obrigatoriamente ser ligado à rede MOBI.E.
 
+Nota (transição 2026): com o novo regime jurídico, deixou de haver obrigatoriedade de ligação à plataforma MOBI.E — há um período transitório até 31-12-2026 em que coexistem redes ligadas e não ligadas. A MOBI.E atua transitoriamente como entidade agregadora de dados (EADME) para o Ponto de Acesso Nacional do IMT, e o carregamento ad-hoc (cartão bancário/app sem contrato prévio, regra AFIR) é cada vez mais comum nas redes não ligadas.
+
 Se por um lado há benefícios para o utilizador, por poder usar qualquer posto com qualquer fornecedor, por outro lado limita um pouco aparecer algumas formas concorrentes.  
 É uma das razões pelas quais não há mais postos Tesla Supercharge a [serem abertos](https://www.motor24.pt/sites/welectric/o-que-se-passa-com-a-rede-de-carregamento-da-tesla/1556395/).
 
@@ -71,7 +75,8 @@ Retirado do site da MOBI.E
 
 ##### Como carregar na rede MOBI.E
 
-Para iniciar o carregamento num posto é normalmente preciso ter um contrato estabelecido com um CEME, um comercializador de energia.  
+Para iniciar o carregamento num posto **ligado à MOBI.E** é normalmente preciso ter um contrato estabelecido com um CEME, um comercializador de energia.  
+Nos postos de **redes não ligadas**, consulta as condições no site/app do operador ou contrata um prestador de serviços de mobilidade (EMSP) — muitos já aceitam cartão bancário ad-hoc.  
 Normalmente é fornecido ao cliente um cartão RFID (pensa em contactless), tag RFID ou através da App no telemóvel. Cada uma de essas 3 opções é válida e tendencialmente universal nos postos de carregamento.  
 Dada a legislaçao do [AFIR](https://transport.ec.europa.eu/transport-themes/clean-transport/alternative-fuels-sustainable-mobility-europe/alternative-fuels-infrastructure_en), começam também a aparecer postos que aceitam cartões de débido/crédito, para além do já existente ad-hoc via QR Code.
 
@@ -90,7 +95,7 @@ Exemplos de Apps são a [https://www.miio.pt/](https://www.miio.pt/) e [https://
 
 ##### Preços de carregamento MOBI.E
 
-Recomendo começar por ler os [detalhes da estrutura tarifária da MOBI.E](https://www.mobie.pt/pt/redemobie/estrutura-tarifaria) .
+Recomendo começar por ler os [detalhes da estrutura tarifária da MOBI.E](https://www.mobie.pt/custo-do-carregamento). As tarifas EGME e TAR são definidas anualmente pela ERSE (ex. Regulamento n.º 7/2026).
 
 A um nível muito alto, o preço do carregamento na rede de postos públicos ligados à MOBI.E é composto por 4 grandes partes:
 
@@ -103,7 +108,7 @@ Em alguns casos, pode ser cobrado em kWh da energia fornecida. Em casos extremos
 
 * Estado Português. Imposto especial sobre o consumo de energia elétrica (IEC) e o imposto sobre o valor acrescentado (IVA).
 
-Vamos a um exemplo:
+Vamos a um exemplo (valores indicativos de 2024 — confirmar nos comparadores live antes de decidir):
 
 A taxa OPC (o que explora o posto, ou seja, pagas por lá estar estacionado) em carregadores CCS2 de 50kW ou mais varia entre 0,05€/min e 0,40€/min (no carregador da Moon Power, em Lisboa), 0,085€/kWh (em postos da Repsol) e 0,07€/kWh e 0,512€/kWh (da IONITY, os postos mais caros do país, mas capazes de 350 kW ou 400 kW).  
 A isto junta-se normalmente ~0,30€ (acresce IVA) por sessão de carregamento.
@@ -123,17 +128,17 @@ Num carregador da EDP com 50kW, seriam precisos 33 minutos, cobrados a 0,11€/m
 Adiciona a isso `0,035 + 0,297€` de ativação/EGME, IEC e IVA.  
 Depois há a TAR, publicada pelo regulador do setor energético, a ERSE.
 
-Enquanto isso, a aplicação da Miio e o site wwww.comparaervilhas.pt são normalmente utilizados por muitos utilizadores para simular os custos totais, dando maior facilidade e transparência ao consumidor.
+Enquanto isso, a aplicação da Miio e o site plan2charge.app são normalmente utilizados por muitos utilizadores para simular os custos totais, dando maior facilidade e transparência ao consumidor. Para o estado live da rede (até 31-12-2026 em transição), ver também [NAP](https://nap.ocarroeletrico.com/).
 
 Se a viatura tiver um consumo médio de `17kWh / 100km`, os 27kWh de energia que colocámos na bateria permitiriam percorrer 159km.  
 Os 8,19€ dão `0,05€/km`, ou `5€/100km`.
 
-**Atualmente, a minha recomendação passa por utilizar a ACP, Luzigas (quando o preço do OMIE está mais baixo), a ViaVerde, a High Green Power ou a Prio. E de preferência os carregadores CCS2 do LIDL.**
+**À data da última revisão, a minha recomendação passa por comparar Atlante, Luzigas (quando o preço do OMIE está mais baixo), ACP, ou Prio nos comparadores abaixo, e de preferência os carregadores CCS2 do LIDL.**
 
 ###### Postos ordenados por custo
 
 Uma lista de Postos ordenados por custo do OPC está disponível em:
-[Postos](https://github.com/FernandoMiguel/OCarroEletrico/tree/main/Postos)
+[Postos](https://github.com/CarregaErvilhas/OCarroEletrico/tree/main/Postos)
 
 ###### CEME ordenados por custo
 
@@ -182,8 +187,8 @@ Aqui as opções de carga são 3,7kW (16A) ou 7,4kW (32A) em monofásico, e 11kW
 
 #### Ligação à MOBI.E
 
-O Fundo Ambiental tem um projeto de apoio chamado [Incentivo pela Introdução no Consumo de Veículos de Emissões Nulas](https://www.fundoambiental.pt/apoios-2022/mitigacao-das-alteracoes-climaticas1/incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-ven-2022.aspx).  
-Nele inclui-se o programa [Carregadores para veículos elétricos em condomínios multifamiliares com ligação à Rede Mobi.E](https://www.fundoambiental.pt/apoios-2022/mitigacao-das-alteracoes-climaticas1/incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-ven-2022/incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-ven-2022-faq-tipologia-7.aspx).
+O Fundo Ambiental tem um projeto de apoio chamado [Incentivo pela Introdução no Consumo de Veículos de Emissões Nulas](https://www.fundoambiental.pt/apoios-2026.aspx).
+Nele inclui-se o programa de [carregadores para veículos elétricos em condomínios multifamiliares](https://www.fundoambiental.pt/aquisicao-de-veiculos-de-emissoes-nulas-no-ano-de-2025-2026--mobilidade-verde-passageiros/total-candidaturas-submetidas-a-pedido-de-pagamento.aspx) (Aviso n.º 06/2025, 2.ª fase com candidaturas 11-06-2026 a 27-07-2026, já encerrada — confirmar o aviso vigente).
 
 Isto permite-te, que tens lugar de garagem em condomínios, candidatares-te a apoios de até 80% de 1000€ do custo de instalação de uma *wallbox*, e de até 80% de 800€ da *wallbox*.
 
@@ -194,27 +199,24 @@ A grande vantagem desta solução é que os cartões ou Apps que usas na rede p�
 Como não há OPC (o explorador do posto), o único custo é mesmo a energia.
 E como é para veículos elétricos, não há taxa audiovisual, etc.
 
-**Alguns dos CEME recomendados.**
+**Alguns dos CEME recomendados (exemplos — confirmar preços atuais no [Comparador CEME](https://CEME.OCarroEletrico.com/) e no [simulador ERSE](https://www.erse.pt/simuladores/mobilidade-eletrica/lista-de-ofertas-comerciais-de-mobilidade-eletrica/)).**
 
 | CEME  | Tipo de tarifa | EUR/kWh | EUR/min |
 | ------------- | ------------- | ------------- | ------------- |
 | LUZiGÁS | Indexado (cliente) | Sim  |  |
-| LUZiGÁS | Indexado (não cliente) | Sim  |  |
-| High Green Power | Fixo | Sim  |  |
-| Tesla | Fixo | Sim |  |
 | ACP Electric by EVIO - sócio ACP | Fixo | Sim  |  |
 | EVIO | Fixo | Sim  |  |
 | Prio Electric | Fixo | Sim  | Sim |
 | Via Verde Electric | Fixo | Sim |  |
 | Cartão EDP Charge | Fixo | Sim |  |
 | Continente Plug & Charge | Fixo |  | Sim |
-| Miio | Indexado | Sim |  |
 
 ## Links Úteis
 
 * [https://ev-database.org/](https://ev-database.org/)
 * [FAQ MOBI.E](https://www.mobie.pt/pt/redemobie/faq)
-* [Estrutura Tarifária MOBI.E](https://www.mobie.pt/pt/redemobie/estrutura-tarifaria)
+* [Custo do Carregamento MOBI.E](https://www.mobie.pt/custo-do-carregamento)
+* [NAP — mapa live da rede (até 31-12-2026 em transição)](https://nap.ocarroeletrico.com/)
 * [Simulador de CEME da ERSE](https://www.erse.pt/simuladores/mobilidade-eletrica/lista-de-ofertas-comerciais-de-mobilidade-eletrica/)
 * [UVE – Associação de Utilizadores de Veículos Elétricos](https://www.uve.pt)
 * [UVE – como carregar um veiculo elétrico](https://www.uve.pt/page/como-carregar-um-veiculo-eletrico/)
@@ -230,9 +232,8 @@ E como é para veículos elétricos, não há taxa audiovisual, etc.
 ## Lista de Simuladores
 
 * [Lista de Simuladores](https://simuladores.OCarroEletrico.com/)
-* [App Carregar - Simulador Mobi.e](https://apps.apple.com/pt/app/carregar/id6448868818?l=en-GB)
-* [Compara Ervilhas - Simulador Mobi.e](https://comparaervilhas.pt/)
 * [Plan2Charge - Simulador VE](https://plan2charge.app/)
+* [App Carregar - Simulador Mobi.e](https://apps.apple.com/pt/app/carregar/id6448868818?l=en-GB)
 * [Comparador CEME](https://CEME.OCarroEletrico.com/)
 
 

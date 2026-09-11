@@ -2,7 +2,7 @@ title: O Carro Elétrico
 description: Esclarecer dúvidas e boas práticas no uso desta nova forma de transporte.
 show_downloads: false
 
-remote_theme: pages-themes/dinky@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
 
@@ -17,6 +17,9 @@ footer:
     - label: "Postos Mobi.e ordenados por custo do OPC"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/CarregaErvilhas/OCarroEletrico/tree/main/Postos"
+    - label: "NAP — mapa live da rede"
+      icon: "fas fa-fw fa-charging-station"
+      url: "https://nap.ocarroeletrico.com/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
